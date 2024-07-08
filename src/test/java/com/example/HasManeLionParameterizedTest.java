@@ -9,12 +9,12 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 @RunWith(Parameterized.class)
-public class LionParameterizedTest {
+public class HasManeLionParameterizedTest {
 
     private final String sex;
     private final boolean expectedHasMane;
 
-    public LionParameterizedTest(String sex, boolean expectedHasMane) {
+    public HasManeLionParameterizedTest(String sex, boolean expectedHasMane) {
         this.sex = sex;
         this.expectedHasMane = expectedHasMane;
     }

@@ -3,6 +3,7 @@ package com.example;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
@@ -10,7 +11,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 import java.util.List;
 
 @RunWith(MockitoJUnitRunner.class)
-public class FelineTests {
+public class FelineTest {
 
     @Spy
     private Feline feline;
@@ -23,12 +24,14 @@ public class FelineTests {
 
     @Test
     public void getKittensWParamReturnsSameValueTest() {
-        Assert.assertEquals(5, feline.getKittens(5));
+        Feline felineObj = new Feline();
+        Assert.assertEquals(5, felineObj.getKittens(5));
     }
 
     @Test
     public void getFamilyTest() {
-        Assert.assertEquals("Кошачьи", feline.getFamily());
+        Feline felineObj = new Feline();
+        Assert.assertEquals("Кошачьи", felineObj.getFamily());
     }
 
     @Test
@@ -39,7 +42,8 @@ public class FelineTests {
 
     @Test
     public void getFoodTest() throws Exception {
+        Feline felineObj = new Feline();
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
-        Assert.assertEquals(expected, feline.getFood("Хищник"));
+        Assert.assertEquals(expected, felineObj.getFood("Хищник"));
     }
 }

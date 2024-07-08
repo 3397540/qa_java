@@ -7,16 +7,15 @@ import org.junit.runners.Parameterized;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 @RunWith(Parameterized.class)
-public class AnimalParameterizedTests {
+public class GetFoodAnimalParameterizedTest {
 
     List<String> expectedFood;
     String animalKind;
 
-    public AnimalParameterizedTests(String animalKind, List<String> expectedFood) {
+    public GetFoodAnimalParameterizedTest(String animalKind, List<String> expectedFood) {
         this.animalKind = animalKind;
         this.expectedFood = expectedFood;
     }

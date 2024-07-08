@@ -1,8 +1,6 @@
 package com.example;
 
 import org.junit.Assert;
-import org.junit.Rule;
-import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -13,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(MockitoJUnitRunner.class)
-public class LionAlexTests {
+public class LionAlexTest {
 
     @Mock
     Feline feline;

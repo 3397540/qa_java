@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class AnimalTests {
+public class AnimalTest {
 
     @Test
     public void getFamilyTest() {
